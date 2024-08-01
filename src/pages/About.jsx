@@ -1,12 +1,25 @@
-import React from 'react';
+import React from "react";
+import AboutUsSection from "../components/AboutUsSection";
+import OurWorkSection from "../components/OurWorkSection";
+import OurImpactSection from "../components/OurImpactSection";
+import OurApproachSection from "../components/OurApproachSection";
+import TheTeamSection from "../components/TheTeamSection";
+import Navbar from "../components/Navbar1";
+import Footer from "../components/Footer1";
 
-const About = () => {
-  return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl text-center text-blue-600">About Us</h1>
-      <p className="text-lg text-gray-700">AquaSustain is a fictional company that specializes in water treatment and water quality monitoring. We are committed to providing clean water solutions to communities and industries around the world. Our team of experts is dedicated to ensuring that everyone has access to safe and clean water.</p>
-    </div>
-  );
-};
+const About = () => (
+  
+  <>
+  <Navbar/>
+  <main className="bg-gray-100">
+    <AboutUsSection />
+    <OurWorkSection />
+    <OurImpactSection />
+    <OurApproachSection />
+    <TheTeamSection />
+  </main>
+  <Footer/>
+  </>
+);
 
 export default About;

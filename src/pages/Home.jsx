@@ -1,10 +1,16 @@
-// src/pages/Home.js
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 const Home = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl text-center text-blue-600">Welcome to OceanTheme</h1>
+    <div>
+      <section className="h-screen bg-gradient-to-b from-cyan-200 to-blue-900 text-white">
+        <Navbar />
+        <Hero />
+        <Footer />
+      </section>
     </div>
   );
 };

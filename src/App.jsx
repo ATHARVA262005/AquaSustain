@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+<<<<<<< HEAD
 import News from './pages/News';
 import Blog from './pages/Blog';
 
@@ -35,6 +36,22 @@ const App = () => {
         <Footer />
       </div>
     </BrowserRouter>
+=======
+import MarineMonitoring from './pages/MarineMonitoring';
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/marine-monitoring" element={<MarineMonitoring />} />
+      </Routes>
+    </Router>
+>>>>>>> b1b6330b58edb16e5283ab98b2f7c490bc24a2cc
   );
 };
 

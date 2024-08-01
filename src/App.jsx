@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import MarineMonitoring from './pages/MarineMonitoring';
+import VolunteerPrograms from './pages/VolunteerPrograms';
+import Donate from './pages/Donate';
 
 const App = () => {
   return (
@@ -19,7 +21,9 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/donate" element={<Donate />} />
         <Route path="/marine-monitoring" element={<MarineMonitoring />} />
+        <Route path="/volunteer-programs" element={<VolunteerPrograms />} />
       </Routes>
     </Router>
   );

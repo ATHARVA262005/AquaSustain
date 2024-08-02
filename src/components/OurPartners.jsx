@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from "react";
+import CompanyCarousel from "./CompanyCarousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import AboutUs from "../components/AboutUs";
-import OurWork from "../components/OurWork";
-import OurImpact from "../components/OurImpact";
-import OurApproach from "../components/OurApproach";
-import TheTeam from "../components/TheTeam";
-import OurPartners from "../components/OurPartners";
-import GetInvolved from "../components/GetInvolved";
 
-const About = () => {
+const OurPartners = () => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -39,24 +31,25 @@ const About = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  
   return (
-    <div className=" bg-gradient-to-br from-sky-100 to-teal-100 text-gray-700  min-h-screen">
-      <Navbar />
-
-      <div className="pt-20">
-        <AboutUs />
-        <OurWork />
-        <OurImpact />
-        <OurApproach />
-        <TheTeam />
-        <OurPartners />
-        <GetInvolved />
+    <section
+      id="our-partners"
+      className=" container mx-auto  flex flex-wrap"
+      data-aos="fade-up"
+    >
+      <div className="w-full mt-4">
+        <h2 className="text-3xl font-bold text-[#04373A] mb-4 text-center justify-center">
+          Our Partners
+        </h2>
+        <p className="mb-4 text-center">
+          We are proud to collaborate with a range of organizations and institutions that share our commitment to marine conservation. Our partnerships help us amplify our impact and achieve our goals more effectively.
+        </p>
+        
+      <CompanyCarousel />
       </div>
-
-      <Footer />
-    </div>
+    </section>
   );
 };
 
-export default About;
+export default OurPartners;

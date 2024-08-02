@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Chart from 'chart.js/auto';
-import Navbar from '../components/Navbar1';
-import Footer from '../components/Footer1';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function MarineMonitoring() {
   const [selectedSection, setSelectedSection] = useState('waterQuality');
